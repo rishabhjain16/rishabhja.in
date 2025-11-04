@@ -617,7 +617,7 @@ a {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -628,6 +628,9 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     transition: all var(--transition-normal);
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-category:hover {
@@ -654,8 +657,19 @@ a {
     color: var(--text-primary);
 }
 
+.skill-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .skill-item {
     margin-bottom: 20px;
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
 }
 
 .skill-header {
@@ -693,6 +707,8 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    flex: 1;
+    align-content: start;
 }
 
 .tech-item {
@@ -722,6 +738,10 @@ a {
 
 .skills-list {
     list-style: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .skills-list li {
@@ -1479,6 +1499,10 @@ a {
     .about-content {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .contact-content {
