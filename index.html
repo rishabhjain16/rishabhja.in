@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rishabh Jain | AI/ML Researcher & Engineer</title>
+    <meta name="description" content="Postdoctoral AI/ML Researcher specializing in Multimodal AI, Speech Technologies, and Large Language Models">
+    <meta name="keywords" content="AI, Machine Learning, Speech Recognition, TTS, LLM, Multimodal AI, Research">
+    <meta name="author" content="Rishabh Jain">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Rishabh Jain | AI/ML Researcher">
+    <meta property="og:description" content="Postdoctoral Researcher at Trinity College Dublin specializing in Multimodal AI and Speech Technologies">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="terminal-prompt">~/</span><span class="logo-text">rishabh-jain</span>
+            </div>
+                        <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="Resume_Rishabh.pdf" class="resume-link" download>Resume</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <div class="terminal-title">rishabh@portfolio:~</div>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">$</span> <span class="command">whoami</span></p>
+                    <p class="terminal-output">Rishabh Jain</p>
+                    <p class="terminal-line"><span class="prompt">$</span> <span class="command">cat role.txt</span></p>
+                    <p class="terminal-output typing-text" id="typing-text"></p>
+                    <p class="terminal-line"><span class="prompt">$</span> <span class="command">ls expertise/</span></p>
+                    <p class="terminal-output">
+                        <span class="file">multimodal_ai.py</span>
+                        <span class="file">speech_tech.py</span>
+                        <span class="file">llm_engineering.py</span>
+                        <span class="file">deep_learning.py</span>
+                    </p>
+                    <p class="terminal-line"><span class="prompt">$</span> <span class="cursor-blink">▊</span></p>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="cta-button primary">
+                    <span>Get in Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="Resume_Rishabh.pdf" class="cta-button secondary" target="_blank" download>
+                    <span>Download Resume</span>
+                    <i class="fas fa-download"></i>
+                </a>
+                <a href="#publications" class="cta-button secondary">
+                    <span>View Research</span>
+                    <i class="fas fa-book"></i>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll Down</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="glow-effect"></div>
+                        <img src="images/profile.png" alt="Rishabh Jain" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-avatar').style.display='flex';">
+                        <div class="placeholder-avatar" style="display: none;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-indicator"></div>
+                        <span>Available for AI Consulting & Collaboration</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Hi, I'm <span class="highlight">Rishabh Jain</span></h3>
+                    <p class="lead">Postdoctoral Researcher at Trinity College Dublin specializing in <span class="highlight">Multimodal AI</span></p>
+                    <p>I recently completed my PhD in AI, focusing on Speech Technologies (TTS/STT) at the University of Galway, Ireland. With a strong foundation in Machine Learning, Deep Learning, and Large Language Models, I'm passionate about pushing the boundaries of AI research and application.</p>
+                    <p>My work spans across speech recognition, text-to-speech synthesis, multimodal learning, and cutting-edge LLM development. I'm actively seeking opportunities to contribute to innovative ML/AI projects as a Machine Learning Engineer, Research Scientist, or Data Scientist.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Publications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-tags">
+                        <span class="tag">AI Research</span>
+                        <span class="tag">Speech Technologies</span>
+                        <span class="tag">LLMs</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Multimodal AI</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                    
+                    <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="2024RishabhJainPhd.pdf" class="cta-button secondary" target="_blank" download style="display: inline-flex;">
+                            <span>Download PhD Thesis</span>
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="Resume_Rishabh.pdf" class="cta-button secondary" target="_blank" download style="display: inline-flex;">
+                            <span>Download Resume</span>
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Core Skills -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI/ML Core</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Machine Learning / Deep Learning</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>PyTorch & TensorFlow</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Speech Technologies (TTS/STT)</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Large Language Models</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-copyright"></i>
+                            <span>C/C++</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-r-project"></i>
+                            <span>R</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git/GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-google"></i>
+                            <span>GCP</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Linux/Slurm</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research & Soft Skills -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Research & Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check"></i> Research Methodology & Publication</li>
+                        <li><i class="fas fa-check"></i> Team Collaboration & Leadership</li>
+                        <li><i class="fas fa-check"></i> Problem Solving & Critical Thinking</li>
+                        <li><i class="fas fa-check"></i> Communication & Presentation</li>
+                        <li><i class="fas fa-check"></i> Project Management</li>
+                        <li><i class="fas fa-check"></i> Multilingual (English, Hindi, Spanish)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulting Section -->
+    <section class="consulting-section">
+        <div class="container">
+            <div class="consulting-banner">
+                <div class="consulting-content">
+                    <div class="consulting-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="consulting-text">
+                        <h3>Available for AI Consulting</h3>
+                        <p>I offer expert consulting services in AI/ML, Speech Technologies, and LLM development. Whether you need guidance on AI strategy, model optimization, or research collaboration, I'm here to help bring your vision to life.</p>
+                        <div class="consulting-services">
+                            <span><i class="fas fa-check-circle"></i> AI Strategy & Implementation</span>
+                            <span><i class="fas fa-check-circle"></i> Speech Technology Solutions</span>
+                            <span><i class="fas fa-check-circle"></i> LLM Development & Fine-tuning</span>
+                            <span><i class="fas fa-check-circle"></i> Research Collaboration</span>
+                        </div>
+                    </div>
+                    <div class="consulting-cta">
+                        <a href="#contact" class="cta-button primary">
+                            <span>Let's Talk</span>
+                            <i class="fas fa-comments"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Academic Background</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="degree-year">2021 - 2024</div>
+                        <h3>PhD in Sound Processing and Artificial Intelligence</h3>
+                        <h4>University of Galway, Ireland</h4>
+                        <p class="thesis-title"><strong>Thesis:</strong> Child Speech Understanding and Generation via Neural ASR and TTS Models</p>
+                        <ul class="contributions">
+                            <li>Enhanced child speech technologies in TTS and STT for the DAVID project</li>
+                            <li>Optimized Tacotron 2 and FastPitch models for realistic synthetic child speech</li>
+                            <li>Improved child ASR performance using wav2vec2, Whisper, and Conformer models</li>
+                            <li>Applied data augmentation techniques to boost ASR accuracy for child speech</li>
+                            <li>Integrated TTS and ASR technologies into interactive smart toys</li>
+                            <li>Developed facial animation pipelines for synthetic-speaking children</li>
+                        </ul>
+                        <div class="education-links">
+                            <a href="2024RishabhJainPhd.pdf" class="thesis-link" download>
+                                <i class="fas fa-download"></i> Download Thesis
+                            </a>
+                            <a href="https://researchrepository.universityofgalway.ie/entities/publication/528574c7-27a3-47d3-8dcf-98ca879c7bad" class="thesis-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="degree-year">2019 - 2020</div>
+                        <h3>MSc in Data Analytics</h3>
+                        <h4>University of Galway, Ireland</h4>
+                        <p class="grade"><strong>Grade:</strong> 1.1 Honours</p>
+                        <p class="thesis-title"><strong>Thesis:</strong> Toolkit for Facial Landmarks Identification and Recognition based on Video Data Analysis</p>
+                        <div class="modules">
+                            <strong>Key Modules:</strong>
+                            <div class="module-tags">
+                                <span>Machine Learning</span>
+                                <span>Deep Learning</span>
+                                <span>NLP</span>
+                                <span>Applied Regression</span>
+                                <span>Data Visualization</span>
+                                <span>Web & Network Science</span>
+                                <span>Information Retrieval</span>
+                                <span>Python & R</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="degree-year">2015 - 2019</div>
+                        <h3>B.Tech in Computer Science (Bioinformatics)</h3>
+                        <h4>VIT University, India</h4>
+                        <p class="grade"><strong>CGPA:</strong> 8.73 / 10.0</p>
+                        <p class="thesis-title"><strong>Thesis:</strong> Patient Health Monitoring System and Detection of Atrial Fibrillation, Fall, and Air Pollutants using IoT Technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Professional Journey</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2024 - Present</div>
+                        <h3>Research Fellow</h3>
+                        <h4>Trinity College Dublin, Ireland</h4>
+                        <ul>
+                            <li>Conducting cutting-edge research in multimodal large language models</li>
+                            <li>Developing tools for gesture recognition and audio-visual modalities</li>
+                            <li>Implementing state-of-the-art audio-visual speech recognition techniques</li>
+                            <li>Collaborating with cross-functional teams on large-scale multimodal models</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Multimodal AI</span>
+                            <span>Audio-Visual</span>
+                            <span>LLMs</span>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2024 - Jun 2024</div>
+                        <h3>Research Scientist</h3>
+                        <h4>Oxford Wave Research, UK</h4>
+                        <ul>
+                            <li>Specialized in STT and LLM training for low-resource languages</li>
+                            <li>Fine-tuned cutting-edge models: Mistral, LLama, Gemma, Phi-3</li>
+                            <li>Implemented LLM quantization for optimization and efficiency</li>
+                            <li>Developed speaker diarization systems with Whisper ASR</li>
+                            <li>Utilized LangChain, Ollama, LM Studio for LLM deployment</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>LLMs</span>
+                            <span>Whisper</span>
+                            <span>Quantization</span>
+                            <span>LangChain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2020 - May 2024</div>
+                        <h3>Research Intern</h3>
+                        <h4>Xperi Corporation, Ireland</h4>
+                        <ul>
+                            <li>Led DTIF-DAVID project: AI platform for voice-enabled toys - a collaboration between XPERI, SoapBox Labs, and University of Galway funded by Enterprise Ireland</li>
+                            <li>Developed multimodal (sound and vision) AI processing platform with low cost and low power consumption for smart toys</li>
+                            <li>Implemented embedded (on-device) processing to deliver high-quality AI experience with long battery life</li>
+                            <li>Built Object/Gesture Detection/Recognition, Automatic Speech Recognition, and Text-to-Speech Synthesis technologies</li>
+                            <li>Integrated TTS/ASR technologies into interactive smart toys for children</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Embedded AI</span>
+                            <span>Object Detection</span>
+                            <span>Gesture Recognition</span>
+                            <span>Smart Toys</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2020 - Feb 2024</div>
+                        <h3>Research Assistant</h3>
+                        <h4>University of Galway, Ireland</h4>
+                        <ul>
+                            <li>Conducted research on speech and audio technology for the DTIF-DAVID project</li>
+                            <li>Developed child speech synthesis models using Tacotron 2 and FastPitch for TTS applications</li>
+                            <li>Enhanced child ASR performance with wav2vec2, Whisper, and Conformer models</li>
+                            <li>Explored synthetic data generation from TTS models to improve ASR technologies for child speech</li>
+                            <li>Implemented data augmentation techniques to boost ASR accuracy for children's voices</li>
+                            <li>Published multiple research papers on child speech recognition and synthesis</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>TTS</span>
+                            <span>ASR</span>
+                            <span>Child Speech</span>
+                            <span>Tacotron 2</span>
+                            <span>wav2vec2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2020 - Apr 2020</div>
+                        <h3>Teaching Assistant</h3>
+                        <h4>University of Galway, Ireland</h4>
+                        <ul>
+                            <li>Taught OOP, Network Communications, and Software Design courses</li>
+                            <li>Mentored students in Java, C#, SQL, XML, and Linux</li>
+                            <li>Evaluated assignments and conducted lab sessions</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Java</span>
+                            <span>C#</span>
+                            <span>Teaching</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Apr 2018 - Jul 2018</div>
+                        <h3>Software Engineer Intern</h3>
+                        <h4>Enbake Consulting, India</h4>
+                        <ul>
+                            <li>Engineered geocoding application middleware using Python</li>
+                            <li>Worked with NodeJS, MongoDB, and Google Cloud Platform</li>
+                            <li>Developed data mining and modeling solutions</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>NodeJS</span>
+                            <span>GCP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;publications&gt;</span>
+                <h2 class="section-title">Research & Publications</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="publications-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="journals">Journals</button>
+                    <button class="tab-btn" data-tab="conferences">Conferences</button>
+                    <button class="tab-btn" data-tab="thesis">Thesis</button>
+                </div>
+                
+                <div class="tab-content active" id="journals">
+                    <div class="publication-card">
+                        <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="pub-details">
+                            <h4>A Text-to-Speech Pipeline, Evaluation Methodology, and Initial Fine-Tuning Results for Child Speech Synthesis</h4>
+                            <p class="pub-authors">R. Jain, M. Y. Yiwere, D. Bigioi, P. Corcoran and H. Cucu</p>
+                            <p class="pub-venue"><strong>IEEE Access</strong>, vol. 10, pp. 47628-47642, 2022</p>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/9764693" class="pub-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card">
+                        <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="pub-details">
+                            <h4>Exploring Native and Non-Native English Child Speech Recognition With Whisper</h4>
+                            <p class="pub-authors">R. Jain, A. Barcovschi, M. Y. Yiwere, P. Corcoran and H. Cucu</p>
+                            <p class="pub-venue"><strong>IEEE Access</strong>, vol. 12, pp. 41601-41610, 2024</p>
+                            <a href="https://ieeexplore.ieee.org/document/10474352" class="pub-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card">
+                        <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="pub-details">
+                            <h4>A WAV2VEC2-Based Experimental Study on Self-Supervised Learning Methods to Improve Child Speech Recognition</h4>
+                            <p class="pub-authors">R. Jain, A. Barcovschi, M. Y. Yiwere, D. Bigioi, P. Corcoran and H. Cucu</p>
+                            <p class="pub-venue"><strong>IEEE Access</strong>, vol. 11, pp. 46938-46948, 2023</p>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10122501" class="pub-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card">
+                        <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="pub-details">
+                            <h4>Augmentation Techniques for Adult-Speech to Generate Child-Like Speech Data Samples at Scale</h4>
+                            <p class="pub-authors">M. Y. Yiwere, A. Barcovschi, R. Jain, H. Cucu and P. Corcoran</p>
+                            <p class="pub-venue"><strong>IEEE Access</strong>, 2023</p>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/10256249" class="pub-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="conferences">
+                    <div class="publication-card">
+                        <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="pub-details">
+                            <h4>Adaptation of Whisper models to child speech recognition</h4>
+                            <p class="pub-authors">Jain, R., Barcovschi, A., Yiwere, M., Corcoran, P., Cucu, H.</p>
+                            <p class="pub-venue"><strong>Interspeech 2023</strong>, pp. 5242-5246</p>
+                            <a href="https://www.isca-archive.org/interspeech_2023/jain23_interspeech.pdf" class="pub-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card">
+                        <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="pub-details">
+                            <h4>Improved Child Text-to-Speech Synthesis through Fastpitch-based Transfer Learning</h4>
+                            <p class="pub-authors">R. Jain and P. Corcoran</p>
+                            <p class="pub-venue"><strong>SpeD 2023</strong>, Bucharest, Romania, pp. 54-59</p>
+                            <a href="https://ieeexplore.ieee.org/document/10314899" class="pub-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="publication-card">
+                        <div class="pub-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="pub-details">
+                            <h4>A comparative analysis between Conformer-Transducer, Whisper, and wav2vec2 for improving child speech recognition</h4>
+                            <p class="pub-authors">A. Barcovschi, R. Jain and P. Corcoran</p>
+                            <p class="pub-venue"><strong>SpeD 2023</strong>, Bucharest, Romania, pp. 42-47</p>
+                            <a href="https://ieeexplore.ieee.org/document/10314867" class="pub-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Read Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="thesis">
+                    <div class="publication-card featured">
+                        <div class="pub-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="pub-details">
+                            <h4>Child Speech Understanding and Generation via Neural ASR and TTS Models</h4>
+                            <p class="pub-authors">Rishabh Jain</p>
+                            <p class="pub-venue"><strong>PhD Thesis</strong>, University of Galway, Ireland (2021-2024)</p>
+                            <p class="pub-description">
+                                Comprehensive research on enhancing child speech technologies through advanced TTS and ASR models, 
+                                including Tacotron 2, FastPitch, wav2vec2, Whisper, and Conformer. Applied data augmentation techniques 
+                                and developed ethical applications for interactive smart toys and facial animation pipelines.
+                            </p>
+                            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
+                                <a href="https://researchrepository.universityofgalway.ie/entities/publication/528574c7-27a3-47d3-8dcf-98ca879c7bad" class="pub-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> View Online
+                                </a>
+                                <a href="2024RishabhJainPhd.pdf" class="pub-link" target="_blank" download style="background: rgba(123, 47, 247, 0.1); border: 1px solid rgba(123, 47, 247, 0.3); padding: 8px 16px; border-radius: 20px; color: var(--accent-secondary);">
+                                    <i class="fas fa-download"></i> Download PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h3>Get In Touch</h3>
+                        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you're looking for research collaboration or have questions about AI/ML, feel free to reach out!</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:j_rishabh@outlook.com" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>j_rishabh@outlook.com</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/rishabhjain16" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>@rishabhjain16</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/rishabhjain16/" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>@rishabhjain16</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-visual">
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">connect.py</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="keyword">class</span> <span class="class-name">Researcher</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.name = <span class="string">"Rishabh Jain"</span>
+        self.role = <span class="string">"AI/ML Researcher"</span>
+        self.location = <span class="string">"Dublin, Ireland"</span>
+        self.interests = [
+            <span class="string">"Multimodal AI"</span>,
+            <span class="string">"Speech Technologies"</span>,
+            <span class="string">"Large Language Models"</span>,
+            <span class="string">"Deep Learning"</span>
+        ]
+    
+    <span class="keyword">def</span> <span class="function">get_in_touch</span>(self):
+        <span class="keyword">return</span> {
+            <span class="string">"email"</span>: <span class="string">"j_rishabh@outlook.com"</span>,
+            <span class="string">"github"</span>: <span class="string">"@rishabhjain16"</span>,
+            <span class="string">"linkedin"</span>: <span class="string">"rishabhjain16"</span>
+        }
+
+<span class="comment"># Let's collaborate!</span>
+rishabh = Researcher()
+contact = rishabh.get_in_touch()</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Rishabh Jain. Crafted with <i class="fas fa-heart"></i> and code</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/rishabhjain16" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rishabhjain16/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:j_rishabh@outlook.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
