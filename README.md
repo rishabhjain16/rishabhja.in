@@ -2,6 +2,8 @@
 
 A modern, techy, and interactive portfolio website showcasing AI/ML research, publications, and professional experience.
 
+Hosted at: www.rishabhja.in
+
 ## 🚀 Features
 
 ### Design & Aesthetics
